@@ -1,0 +1,117 @@
+/* Change the text color on hover */
+.nav-link:hover {
+    color: #007bff; /* Change to your desired hover color */
+    background-color: rgba(0, 123, 255, 0.1); /* Optional: Add a background color on hover */
+    border-radius: 5px; /* Optional: Round the corners */
+}
+
+/* Optional: Add hover effect for the dropdown items */
+.dropdown-item:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Change background color on hover */
+}
+body{background-color: #1a1a19;}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+.carousel-control-prev {
+    margin-left: -60px;
+  }
+  
+  .carousel-control-next {
+    margin-right: -60px;
+  }
+#navbarNav{
+    display: flex;
+}
+.nav-link {
+    text-decoration: none;
+    color: #1179e2;
+    margin: 10px;
+    border-radius: 5px;
+}
+header {
+  position: relative; /* Make the header position relative */
+  color: rgb(255, 0, 0); /* Text color */
+  display: flex;
+}
+
+header::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position it absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://t3.ftcdn.net/jpg/07/32/10/90/360_F_732109080_4lXwGofazqAiysUpcCnrbflsNOl9EMdW.jpg');
+  background-size: cover; /* Ensures the image covers the header */
+  opacity: 20%; /* Set the desired opacity (0 to 1) */
+  z-index: 0; /* Place it behind the text */
+}
+
+header > * {
+  position: relative; /* Ensure text is above the background */
+  z-index: 1; /* Place text above the background */
+}
+body {
+  font-family: sans-serif; /* Choose a suitable font */
+}
+.container-list {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(10, 1fr); /* 5 columns */
+  gap: 10px; /* Space between items */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.item {
+  position: relative; /* Positioning context for absolute children */
+}
+.image-wrapper {
+  width: 100%; /* Set a fixed width */
+  height: 300px; /* Set a fixed height for 1:2 ratio */
+  overflow: hidden; /* Hide overflow */
+  padding-left: 10;
+  
+}
+.list-img {
+  width: 100%; /* Make image take full width */
+  height: 100%; /* Make image take full height */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+.text-overlay {
+  position: absolute; /* Position text absolutely */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+  padding: 5px; /* Padding around text */
+  box-sizing: border-box; /* Include padding in width/height */
+  transition: transform 0.3s ease, padding-bottom 0.3s ease; /* Smooth transition for the transform and padding properties */
+}
+
+.item:hover .text-overlay {
+  transform: translateY(0px); /* Move text up by 10 pixels on hover */
+  padding-bottom: 15px; /* Increase bottom padding to fill the gap */
+}
+.main-text{
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+}
+.border-list {
+background-color: black;
+}
+footer {
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.8) , rgba(27, 25, 24, 0)); /* Example transparent gradient colors */
+    color: white; /* Change text color for better contrast */
+}
